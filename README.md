@@ -14,3 +14,6 @@ a repository name, displays the following information:
 * `npm install`
 * `npm start`
 
+# Unit test 
+
+* `npm test`
