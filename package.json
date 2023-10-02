@@ -1,0 +1,8 @@
+{
+  "name": "orderbird",
+  "version": "1.0.0",
+  "description": "Display github repo info",
+  "main": "index.js",
+  "scripts": {},
+  "devDependencies": {}
+}
