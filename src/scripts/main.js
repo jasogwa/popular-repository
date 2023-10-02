@@ -37,3 +37,26 @@ export const fetchRepositoryInfo = async (repoName) => {
         throw error;
     }
 };
+
+export const handleFormSubmit = async (repoForm) => {
+    try {
+        const repoNameInput = document.getElementById('repoName');
+        const repositoryName = repoNameInput.value.trim();
+        if (repositoryName && repositoryName != '') {
+            const data = await fetchRepositoryInfo(repositoryName);
+            renderRepositoryInfo(repoForm, data);
+        } else {
+            alert('Please enter a repository name.');
+        }
+    } catch (error) {
+        console.error('Error handling form submission:', error);
+    }
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    const repoForm = document.getElementById('repoForm');
+    repoForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        handleFormSubmit(repoForm);
+    });
+});
