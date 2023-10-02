@@ -3,7 +3,17 @@
   "version": "1.0.0",
   "description": "Display github repo info",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "build": "parcel build --no-warnings src/index.html",
+    "test": "jest --watchAll --config=jest.config.js"
+  },
+  "jest": {
+    "preset": "babel-jest",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  },
   "devDependencies": {
     "@babel/core": "^7.23.0",
     "@babel/preset-env": "^7.22.20",
