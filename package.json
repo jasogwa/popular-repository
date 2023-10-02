@@ -6,7 +6,7 @@
     "scripts": {
         "start": "parcel src/index.html --open",
         "build": "parcel build --no-warnings src/index.html",
-        "lint": "eslint . --ext js html --report-unused-disable-directives --max-warnings 0",
+        "lint": "eslint . --ext js --report-unused-disable-directives --max-warnings 0",
         "test": "jest --watchAll --config=jest.config.js"
     },
     "jest": {
