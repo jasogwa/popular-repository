@@ -7,3 +7,10 @@ a repository name, displays the following information:
 * Author’s profile picture
 * Repository’s stars and forks
 * Whether the repository is popular or not
+
+# Installation 
+
+* `npm install -g parcel-bundler`
+* `npm install`
+* `npm start`
+
