@@ -1,5 +1,5 @@
 const config = {
-    githubAccessToken: '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'
+    githubAccessToken: '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'
 };
 
 export default config;

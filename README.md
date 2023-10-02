@@ -10,6 +10,8 @@ a repository name, displays the following information:
 
 # Installation 
 
+Go to `src/scripts/config.js` , replace the access token with your own access token.
+
 * `npm install -g parcel-bundler`
 * `npm install`
 * `npm start`
