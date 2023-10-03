@@ -17,7 +17,7 @@ export const renderRepositoryInfo = (app, data) => {
             </div>
         `;
     } else {
-        repositoryInfo.innerHTML = 'Error: Unable to retrieve repository information.';
+        repositoryInfo.innerHTML = 'Access Denied!: Please check your Authentication token';
     }
     app.appendChild(repositoryInfo);
 };
